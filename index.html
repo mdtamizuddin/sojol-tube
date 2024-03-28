@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PH TUBE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Manrope:wght@300&display=swap"
+        rel="stylesheet">
+    
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <header class="container mx-auto border-solid border-b-2 border-gray-300">
+
+        <div style="font-family: Arial, Helvetica, sans-serif;"
+            class="grid grid-cols-3 place-content-center h-20 mt-8 ">
+            <div class=" justify-self-start">
+                <img class="ml-5 mt-1" src="./img/Logo.png" alt="">
+
+            </div>
+            <div class="justify-self-center">
+                <button
+                    class=" bg-gray-200 hover:bg-gray-300 py-2 px-5 rounded-md mr-5  text-gray-700 font-bold   ">Sort by
+                    view</button>
+            </div>
+            <div class=" justify-self-end mt-1 ">
+                <button
+                    class=" bg-[#FF1F3D] hover:bg-[#dc2d44] py-2 px-5 rounded-md mr-5 text-white font-bold  ">Blog</button>
+            </div>
+        </div>
+
+    </header>
+
+
+    <section class="container mx-auto mt-8 mb-8">
+        <div class="flex justify-center">
+            <div><button id="buttonCatagoryAll" onclick="loadAllCatagoryAPI()"
+                    class="ml-2 bg-[#FF1F3D] hover:bg-[#dc2d44] py-1 px-5 rounded-sm mr-5 text-white font-bold ">All</button>
+            </div>
+            <div><button  onclick="loadCatagoryMusicAPI()" id="secondButtons"
+                    class=" ml-2 bg-gray-200 hover:bg-gray-300 py-1 px-5 rounded-sm mr-5  text-gray-700 font-bold">Music</button>
+            </div>
+            <div><button onclick="loadCatagoryComedyAPI()"
+                    class=" ml-2 bg-gray-200 hover:bg-gray-300 py-1 px-5 rounded-sm mr-5  text-gray-700 font-bold   " id="comedy">Comedy</button>
+            </div>
+            <div><button onclick="loadCatagoryDrawingAPI()"
+                    class=" bg-gray-200 hover:bg-gray-300 py-1 px-5 rounded-sm mr-5  text-gray-700 font-bold   " id="drawing">Drawing</button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- loading -->
+    <div id="loading" class="container mx-auto text-center py-10 hidden">
+        <span class=" loading loading-spinner loading-lg"></span>
+
+    </div>
+
+    <main class="container mx-auto">
+        <div id="mainContainItems" class="carddd grid grid-cols-4 place-items-center gap-4">
+            <!-- <div class="carddd grid grid-cols-4 place-items-center gap-4">
+                <div class=" w-80 bg-base-100 ">
+                    <figure><img class="rounded-lg" src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+                            alt="Shoes" /></figure>
+                    <div class="py-6">
+                        <div class="flex">
+                            <div>
+                                <img class="w-20" src="./img/Ellipase1.png" alt="">
+                            </div>
+                            <div class="pl-4">
+                                <h4 class="leading-6 text-1xl manrope-uniquifier font-bold">Building a Winning UX Strategy Using the Kano Model</h4>
+                                <div class="inline-flex">
+                                    <p class="leading-8">Awlad Hossain</p>
+                                    <div class="grid ml-1 place-items-center "><img class="w-4 h-4 mt-1 "
+                                            src="./img/Group 3.png" alt=""></div>
+                                </div>
+                                <h5>91K views</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div> -->
+        </div>
+    </main>
+
+
+
+    <script src="./js/script.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.9.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</body>
+
+</html>
